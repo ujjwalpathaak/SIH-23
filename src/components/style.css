@@ -1,0 +1,54 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: black;
+}
+
+.main {
+  padding: 1rem 0;
+}
+
+.section {
+  padding: 1rem 0;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.homeimg {
+  width: 100vw;
+}
