@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 // import "./StudentLogin.css";
 import backgroundImage from "../assets/img/login.png";
 // import axios from "axios";
@@ -76,9 +76,9 @@ function Login() {
                         placeholder="Password"
                         onChange={(e) => setPassword(e.target.value)}
                     />
-                    <button className="z-10 duration-150 bg-orange-400 rounded-full hover:bg-white-500 text-white font-semibold hover:text-orange-400 py-2 px-36 mt-3 border-2 border-white-500 hover:border-orange-400 hover:bg-white">
+                    <Link to='/play/instructions' className="z-10 duration-150 bg-orange-400 rounded-full hover:bg-white-500 text-white font-semibold hover:text-orange-400 py-2 px-36 mt-3 border-2 border-white-500 hover:border-orange-400 hover:bg-white">
                         Sign In
-                    </button>
+                    </Link>
                 </div>
             </div>
         </>
