@@ -34,7 +34,7 @@ export const ques = [
     },
     {
         id: 4,
-        question: "Which is the only mammal that can’t jump?",
+        question: "Which is the only mammal that can't jump?",
         options: [
             "Dog",
             "Elephant",
