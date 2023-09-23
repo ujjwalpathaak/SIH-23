@@ -7,6 +7,8 @@ export default function Trivia({
     setTimeOut,
     timeOut,
     checkArray,
+    setCorrect,
+    correct,
     setCheckArray
 }) {
     const [question, setQuestion] = useState(null);
@@ -30,6 +32,7 @@ export default function Trivia({
         delay(1000, () => {
             if (question.answer === a) {
                 delay(0, () => {
+                    setCorrect(correct + 1);
                     setQuestionNumber(questionNumber + 1);
                     setSelectedAnswer(null);
                 });
