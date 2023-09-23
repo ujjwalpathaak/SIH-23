@@ -14,6 +14,8 @@ function App() {
     const [incorrect, setIncorrect] = useState(0);
     const [questionNumber, setQuestionNumber] = useState(1);
     const [checkArray, setCheckArray] = useState(new Array(ques.length).fill(0));
+    const [skipNow,setSkipNow] = useState(false);
+
 
     const handleScore = () => {
         setIncorrect(ques.length - correct)
@@ -29,6 +31,9 @@ function App() {
         setCheckArray(temp);
         setQuestionNumber(questionNumber + 1);
     }
+
+
+
 
     return (
         <div className="h-[100vh] flex">
@@ -46,8 +51,10 @@ function App() {
                     <div className="h-[10vh] flex justify-between">
                         <div className="w-[70px] h-[70px] flex items-center justify-center m-5 text-2xl border-4 text-black font-medium border-black bg-slate-200 rounded-full">
                             <Timer
+                                setSkipNow = {setSkipNow}
                                 setTimeOut={setTimeOut}
                                 questionNumber={questionNumber}
+                                setQuestionNumber = {setQuestionNumber}
                             />
                         </div>
                     </div>
